@@ -285,6 +285,31 @@
     .skill-item p { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
     .skills-box { padding: 36px; display: flex; flex-direction: column; gap: 24px; }
 
+    /* ── COMPANY LOGO PLACEHOLDER ── */
+    .company-logo-wrap {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 10px;
+    }
+    .company-logo {
+      width: 52px; height: 52px; border-radius: 10px; flex-shrink: 0;
+      border: 1px solid var(--border);
+      overflow: hidden; display: flex; align-items: center; justify-content: center;
+      background: rgba(20,184,166,0.06);
+      transition: border-color 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+    }
+    .company-logo:hover {
+      border-color: rgba(20,184,166,0.4);
+      box-shadow: 0 0 14px rgba(20,184,166,0.15);
+    }
+    .company-logo img { width: 100%; height: 100%; object-fit: contain; }
+    .company-logo .logo-placeholder {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 3px; text-align: center; padding: 4px;
+    }
+    .company-logo .logo-placeholder svg { width: 20px; height: 20px; opacity: 0.45; }
+    .company-logo .logo-placeholder span { font-size: 0.52rem; color: var(--muted); line-height: 1.1; }
+
     /* ── TIMELINE ── */
     .timeline { display: flex; flex-direction: column; gap: 20px; max-width: 800px; }
     .tl-item { position: relative; padding-left: 36px; }
@@ -487,17 +512,20 @@
           <a href="#contact" class="btn-ghost">Contact Me</a>
         </div>
       </div>
-      <!-- Photo -->
+      <!-- Photo — replace href="#" with your image URL or file path -->
       <div class="reveal d3">
-        <div class="photo-frame">
-          <div class="photo-placeholder">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="8" r="4" opacity="0.55"/>
-              <path d="M12 14c-4 0-7 2-7 5v3h14v-3c0-3-3-5-7-5z" opacity="0.55"/>
-            </svg>
-            <p>Your Photo Here</p>
+        <a href="#" title="Click to set your profile photo" style="display:block; max-width:300px; margin:0 auto; text-decoration:none;">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="8" r="4" opacity="0.55"/>
+                <path d="M12 14c-4 0-7 2-7 5v3h14v-3c0-3-3-5-7-5z" opacity="0.55"/>
+              </svg>
+              <p>Your Photo Here</p>
+              <p style="font-size:0.68rem; margin-top:4px; color:var(--teal);">[ replace href with image path ]</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -640,8 +668,19 @@
     <div class="timeline">
       <div class="tl-item reveal d1">
         <div class="glass tl-card">
-          <span class="badge">2026</span>
-          <h3>Big Dot</h3>
+          <div class="company-logo-wrap">
+            <!-- Replace href="#" with the company website, replace the placeholder with <img src="your-logo.png" alt="Big Dot"> if you have a logo -->
+            <a href="#" class="company-logo" title="Big Dot logo — replace href & add <img> inside">
+              <div class="logo-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8L2 7h20z"/></svg>
+                <span>Logo</span>
+              </div>
+            </a>
+            <div>
+              <span class="badge">2026</span>
+              <h3 style="margin-top:6px;">Big Dot</h3>
+            </div>
+          </div>
           <p class="period">Marketing, Digital Marketing & Business Strategy Intern</p>
           <ul>
             <li>Digital marketing campaigns</li>
@@ -654,8 +693,18 @@
       </div>
       <div class="tl-item reveal d2">
         <div class="glass tl-card">
-          <span class="badge" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.22); color:var(--sky);">2025</span>
-          <h3>Anupum Fuels</h3>
+          <div class="company-logo-wrap">
+            <a href="#" class="company-logo" title="Anupum Fuels logo — replace href & add <img> inside">
+              <div class="logo-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 000 20c1.1 0 2-.4 2.8-1M2.5 9h19"/></svg>
+                <span>Logo</span>
+              </div>
+            </a>
+            <div>
+              <span class="badge" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.22); color:var(--sky);">2025</span>
+              <h3 style="margin-top:6px;">Anupum Fuels</h3>
+            </div>
+          </div>
           <p class="period c-sky">Research & Business Development Intern</p>
           <ul>
             <li>Alternative fuel research</li>
@@ -667,24 +716,54 @@
       </div>
       <div class="tl-item reveal d3">
         <div class="glass tl-card">
-          <span class="badge">2023</span>
-          <h3>AISECT</h3>
+          <div class="company-logo-wrap">
+            <a href="#" class="company-logo" title="AISECT logo — replace href & add <img> inside">
+              <div class="logo-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
+                <span>Logo</span>
+              </div>
+            </a>
+            <div>
+              <span class="badge">2023</span>
+              <h3 style="margin-top:6px;">AISECT</h3>
+            </div>
+          </div>
           <p class="period">Business Operations & Research Intern</p>
           <p class="detail">Strategic business operations & market research</p>
         </div>
       </div>
       <div class="tl-item reveal d4">
         <div class="glass tl-card">
-          <span class="badge" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.22); color:var(--sky);">2022</span>
-          <h3>360tf</h3>
+          <div class="company-logo-wrap">
+            <a href="#" class="company-logo" title="360tf logo — replace href & add <img> inside">
+              <div class="logo-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+                <span>Logo</span>
+              </div>
+            </a>
+            <div>
+              <span class="badge" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.22); color:var(--sky);">2022</span>
+              <h3 style="margin-top:6px;">360tf</h3>
+            </div>
+          </div>
           <p class="period c-sky">Finance & Market Research Intern</p>
           <p class="detail">Financial analysis & market intelligence</p>
         </div>
       </div>
       <div class="tl-item reveal d5">
         <div class="glass tl-card">
-          <span class="badge">2021</span>
-          <h3>Unacademy</h3>
+          <div class="company-logo-wrap">
+            <a href="#" class="company-logo" title="Unacademy logo — replace href & add <img> inside">
+              <div class="logo-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                <span>Logo</span>
+              </div>
+            </a>
+            <div>
+              <span class="badge">2021</span>
+              <h3 style="margin-top:6px;">Unacademy</h3>
+            </div>
+          </div>
           <p class="period">Content Writer Intern</p>
           <p class="detail">Educational content creation & strategy</p>
         </div>
@@ -763,7 +842,6 @@
         <div>
           <h3>IIM Ahmedabad</h3>
           <p>Winner • Strategic Business Case</p>
-          <a href="#" class="ach-link">View certificate →</a>
         </div>
       </div>
       <div class="glass ach-card reveal d2">
@@ -771,7 +849,6 @@
         <div>
           <h3>IIM Bangalore</h3>
           <p>Winner • Market Analysis Challenge</p>
-          <a href="#" class="ach-link" style="color:var(--sky);">View certificate →</a>
         </div>
       </div>
       <div class="glass ach-card reveal d3">
@@ -779,7 +856,6 @@
         <div>
           <h3>IIM Indore</h3>
           <p>Winner • Business Strategy Competition</p>
-          <a href="#" class="ach-link">View certificate →</a>
         </div>
       </div>
       <div class="glass ach-card reveal d4">
@@ -787,7 +863,6 @@
         <div>
           <h3>MDI Gurgaon</h3>
           <p>Winner • Leadership Excellence</p>
-          <a href="#" class="ach-link" style="color:var(--sky);">View certificate →</a>
         </div>
       </div>
     </div>
@@ -946,14 +1021,14 @@
     </div>
     <div class="glass contact-box reveal d1">
       <p class="c-muted" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.7px; margin-bottom:10px;">Email</p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaikumar.meghanani07@gmail.com" class="contact-email">jaikumar.meghanani07@gmail.com</a>
+      <a href="mailto:jaikumar.meghanani07@gmail.com" class="contact-email">jaikumar.meghanani07@gmail.com</a>
       <div class="contact-divider"></div>
       <div class="social-links">
-        <a href="https://www.instagram.com/ferdy_jai/" target="_blank" rel="noopener" class="social-link">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           Instagram
         </a>
-        <a href="www.linkedin.com/in/jai-kumar-meghanani" target="_blank" rel="noopener" class="social-link">
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           LinkedIn
         </a>
