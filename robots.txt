@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jai-kumar-meghanani.github.io/portfolio/sitemap.xml
