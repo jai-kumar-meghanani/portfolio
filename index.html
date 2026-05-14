@@ -417,6 +417,7 @@
     @media (max-width: 560px) { .certs-grid { grid-template-columns: 1fr; } }
     .cert-card { padding: 24px; }
     .cert-card svg { width: 26px; height: 26px; margin-bottom: 12px; display: block; }
+    .cert-card {text-decoration: none; color: inherit; display: block;}
     .cert-card h4 { font-family: var(--font-display); font-size: 0.92rem; font-weight: 700; }
     .cert-card p { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
     .cert-link { font-size: 0.75rem; color: var(--teal); margin-top: 10px; display: inline-block; text-decoration: none; transition: opacity 0.2s; }
@@ -433,6 +434,13 @@
       flex-direction: column; gap: 8px;
       font-size: 0.7rem; color: var(--muted);
     }
+    .book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
     .book-cover svg { width: 36px; height: 36px; }
     .book-cover.teal { background: linear-gradient(135deg, rgba(20,184,166,0.15), rgba(56,189,248,0.1)); }
     .book-cover.sky  { background: linear-gradient(135deg, rgba(56,189,248,0.15), rgba(20,184,166,0.1)); }
@@ -552,10 +560,6 @@
         </div>
       </div>
       <!-- Photo — replace href="#" with your image URL or file path -->
-      <div class="reveal d3">
-       <div class="company-logo">
-  <img src="https://jai-kumar-meghanani.github.io/portfolio/portfolio.png" alt="Company Logo">
-</div>
 <div class="photo-frame">
   <img src="https://jai-kumar-meghanani.github.io/portfolio/portfolio.png" alt="Jai Kumar Meghanani" class="profile-photo">
 </div>
@@ -715,10 +719,6 @@
             <div class="company-logo">
   <img src="https://jai-kumar-meghanani.github.io/portfolio/bigdot.png" alt="Company Logo">
 </div>
-              <div class="logo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8L2 7h20z"/></svg>
-                <span>Logo</span>
-              </div>
             </a>
             <div>
               <span class="badge">2026</span>
@@ -741,10 +741,6 @@
          <div class="company-logo">
   <img src="https://jai-kumar-meghanani.github.io/portfolio/anupamfuels.jpg" alt="Company Logo">
 </div>
-              <div class="logo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 000 20c1.1 0 2-.4 2.8-1M2.5 9h19"/></svg>
-                <span>Logo</span>
-              </div>
             </a>
             <div>
               <span class="badge" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.22); color:var(--sky);">2025</span>
@@ -766,10 +762,6 @@
             <div class="company-logo">
   <img src="https://jai-kumar-meghanani.github.io/portfolio/aisect.png" alt="Company Logo">
 </div>
-              <div class="logo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
-                <span>Logo</span>
-              </div>
             </a>
             <div>
               <span class="badge">2023</span>
@@ -786,10 +778,6 @@
            <div class="company-logo">
   <img src="https://jai-kumar-meghanani.github.io/portfolio/360tf.png" alt="Company Logo">
 </div>
-              <div class="logo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
-                <span>Logo</span>
-              </div>
             </a>
             <div>
               <span class="badge" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.22); color:var(--sky);">2022</span>
@@ -806,10 +794,6 @@
             <div class="company-logo">
   <img src="https://jai-kumar-meghanani.github.io/portfolio/unacademy.jpg" alt="Company Logo">
 </div>
-              <div class="logo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-                <span>Logo</span>
-              </div>
             </a>
             <div>
               <span class="badge">2021</span>
@@ -933,48 +917,41 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" width="26" height="26"><circle cx="12" cy="8" r="6"/><path d="M9 21l3-3 3 3M6 18l6-6 6 6"/></svg>
         <h4>Meta Digital Marketing</h4>
         <p>Meta • Professional certification</p>
-       <div class="company-logo">
-  <img src="https://www.credly.com/badges/f7cc76f7-1fa8-4a11-824b-1c9732f2177d/linked_in_profile" alt="Company Logo">
-</div>
+ <a href="https://www.credly.com/badges/f7cc76f7-1fa8-4a11-824b-1c9732f2177d/linked_in_profile" class="cert-link">View certificate →</a>
       </div>
       <div class="glass cert-card reveal d2">
         <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" width="26" height="26"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         <h4>Prompt Engineering</h4>
         <p>Google • AI & Automation</p>
-       <div class="company-logo">
-  <img src="https://jai-kumar-meghanani.github.io/portfolio/prompt.jpg" alt="Company Logo">
+       <a href="https://jai-kumar-meghanani.github.io/portfolio/prompt.jpg" class="cert-link" style="color:var(--sky);">View certificate →</a>
 </div>
       </div>
       <div class="glass cert-card reveal d3">
         <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" width="26" height="26"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 000 20M12 2a15.3 15.3 0 010 20"/></svg>
         <h4>ESG Certification</h4>
         <p>Bloomberg • Sustainability</p>
-       <div class="company-logo">
-  <img src="https://jai-kumar-meghanani.github.io/portfolio/ESG.jpg" alt="Company Logo">
+       <a href="https://jai-kumar-meghanani.github.io/portfolio/ESG.jpg" class="cert-link">View certificate →</a>
 </div>
       </div>
       <div class="glass cert-card reveal d4">
         <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" width="26" height="26"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
         <h4>Marketing Analytics</h4>
         <p>Darden School • Data Analytics</p>
-       <div class="company-logo">
-  <img src="https://jai-kumar-meghanani.github.io/portfolio/Marketing Analytics.jpg" alt="Company Logo">
+        <a href="https://jai-kumar-meghanani.github.io/portfolio/Marketing Analytics.jpg" class="cert-link" style="color:var(--sky);">View certificate →</a>
 </div>
       </div>
       <div class="glass cert-card reveal d5">
         <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" width="26" height="26"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
         <h4>Market Concepts</h4>
         <p>Bloomberg • Financial Markets</p>
-        <div class="company-logo">
-  <img src="https://jai-kumar-meghanani.github.io/portfolio/Market concepts.jpg" alt="Company Logo">
+        <a href="https://jai-kumar-meghanani.github.io/portfolio/Market concepts.jpg" class="cert-link">View certificate →</a>
 </div>
       </div>
       <div class="glass cert-card reveal d6">
         <svg viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" width="26" height="26"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         <h4>Data Analysis with Python</h4>
         <p>IBM • Programming</p>
-       <div class="company-logo">
-  <img src="https://www.credly.com/badges/" alt="Company Logo">
+        <a href="https://www.credly.com/badges/0ed003f4-04a0-4d2a-bfbf-1bb6a75e065a/public_url" class="cert-link" style="color:var(--sky);">View certificate →</a>
 </div>
       </div>
     </div>
@@ -991,9 +968,8 @@
     <div class="books-grid">
       <div class="glass book-card reveal d1">
         <div class="book-cover teal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-          <span>Book Cover</span>
-        </div>
+  <img src="https://jai-kumar-meghanani.github.io/portfolio/letters.jpg" alt="Book Cover">
+</div>
         <div class="book-info">
           <span class="badge" style="margin-bottom:10px; display:inline-block;">Published</span>
           <h3>Letters Between The Shadows</h3>
